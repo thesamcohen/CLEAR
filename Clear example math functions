@@ -1,0 +1,27 @@
+DocType = Math
+
+function sum(number1, number2, etc) // input is each of the numbers seperated by commas
+    return: sum(input)
+
+function subtract(number1, number2, etc)
+    return: subtract(input)
+
+function multiply(number1, number2, etc)
+    return: product(input)
+
+function divide(number1, number2, etc)
+    return: quotient(input)
+
+function findpattern(name.XLS) // the name.XLS is a placeholder for a users xcel doc which will be found on the local user's computer. They do not need to provide a PATH
+
+function factor(a^2 + 2ab +b^2)
+    return: factor(input) // the return would be (a+b)(a+b)
+
+function simplify((a+b)(a+b))
+    return: simplify(input) // the return would be (a+b)^2
+
+function expand((a+b)^2)
+    return: exp(input) // the return would be (a+b)(a+b)
+
+function converttime(9:00 AM UTC, EST)
+    return: converttime Input1 to Input2 // return would be 4:00 AM

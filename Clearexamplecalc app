@@ -1,0 +1,69 @@
+DocType = App
+
+Start
+    AppName = "Simple Calculator"
+    AppDescription = "A basic calculator for simple arithmetic"
+    AppVersion = 1.0
+    AppAuthor = "Your Name"
+    AppBackground = white
+
+    // Layout
+    CalculatorUI
+        Header
+            Text = "Simple Calculator"
+            TextSize = 20
+            TextColor = black
+            Alignment = middle
+            BackgroundColor = lightgray
+        EndHeader
+
+        OutputField
+            Height = 50px
+            Width = 100%
+            TextAlign = right
+            TextSize = 18
+            Border = 1px solid gray
+        EndOutputField
+
+        Buttons
+            Layout = Grid
+            Rows = 4
+            Columns = 4
+            ButtonSize = 50px by 50px
+            ButtonSpacing = 10px
+
+            Buttons
+                "7" Action = AddToOutput("7")
+                "8" Action = AddToOutput("8")
+                "9" Action = AddToOutput("9")
+                "/" Action = AddToOutput("/")
+                "4" Action = AddToOutput("4")
+                "5" Action = AddToOutput("5")
+                "6" Action = AddToOutput("6")
+                "*" Action = AddToOutput("*")
+                "1" Action = AddToOutput("1")
+                "2" Action = AddToOutput("2")
+                "3" Action = AddToOutput("3")
+                "-" Action = AddToOutput("-")
+                "0" Action = AddToOutput("0")
+                "C" Action = ClearOutput()
+                "=" Action = CalculateResult()
+                "+" Action = AddToOutput("+")
+            EndButtons
+        EndButtons
+    EndCalculatorUI
+
+    // Functionality
+    Function AddToOutput(Input)
+        Append Input to OutputField
+    EndFunction
+
+    Function ClearOutput()
+        Set OutputField to ""
+    EndFunction
+
+    Function CalculateResult()
+        Evaluate OutputField
+        DisplayResult in OutputField
+    EndFunction
+End

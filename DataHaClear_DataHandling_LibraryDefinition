@@ -1,0 +1,177 @@
+DocType = LibraryDefinition
+
+LibraryName = DataHandling
+
+# Data Storage Functions
+
+function CreateDataSet(name)
+    Creates an empty data set with the given name
+    Example: CreateDataSet("StudentScores")
+End
+
+function AddToDataSet(dataSet, record)
+    Adds a record to the specified data set
+    Example: AddToDataSet("StudentScores", {Name: "Alice", Score: 95})
+End
+
+function RemoveFromDataSet(dataSet, condition)
+    Removes records that match the condition
+    Example: RemoveFromDataSet("StudentScores", "Score < 50")
+End
+
+function UpdateRecord(dataSet, condition, newValues)
+    Updates records that match the condition with new values
+    Example: UpdateRecord("StudentScores", "Name = 'Alice'", {Score: 98})
+End
+
+function RetrieveData(dataSet, condition)
+    Retrieves records matching the condition
+    Example: RetrieveData("StudentScores", "Score > 90")
+End
+
+function ClearDataSet(dataSet)
+    Clears all records from the specified data set
+    Example: ClearDataSet("StudentScores")
+End
+
+# Data Analysis Functions
+
+function CountRecords(dataSet, condition)
+    Returns the number of records matching the condition
+    Example: CountRecords("StudentScores", "Score > 90")
+End
+
+function SumValues(dataSet, field)
+    Returns the sum of a specified field
+    Example: SumValues("StudentScores", "Score")
+End
+
+function AverageValues(dataSet, field)
+    Returns the average of a specified field
+    Example: AverageValues("StudentScores", "Score")
+End
+
+function FindMax(dataSet, field)
+    Finds the maximum value of a specified field
+    Example: FindMax("StudentScores", "Score")
+End
+
+function FindMin(dataSet, field)
+    Finds the minimum value of a specified field
+    Example: FindMin("StudentScores", "Score")
+End
+
+function GroupBy(dataSet, field)
+    Groups records by a specified field and returns counts
+    Example: GroupBy("StudentScores", "Grade")
+End
+
+# Data Transformation Functions
+
+function SortData(dataSet, field, order)
+    Sorts the data set by the specified field in ascending or descending order
+    Example: SortData("StudentScores", "Score", "Descending")
+End
+
+function FilterData(dataSet, condition)
+    Returns a new data set with records matching the condition
+    Example: FilterData("StudentScores", "Score >= 70")
+End
+
+function MapData(dataSet, transformFunction)
+    Applies a transformation to each record and returns a new data set
+    Example: MapData("StudentScores", "Score * 1.1")
+End
+
+function MergeDataSets(dataSet1, dataSet2)
+    Merges two data sets into one
+    Example: MergeDataSets("ScoresA", "ScoresB")
+End
+
+function SplitData(dataSet, condition)
+    Splits a data set into two based on the condition
+    Example: SplitData("StudentScores", "Score >= 75")
+End
+
+# Data Import/Export Functions
+
+function ImportCSV(filePath, dataSet)
+    Imports data from a CSV file into a data set
+    Example: ImportCSV("students.csv", "StudentScores")
+End
+
+function ExportCSV(dataSet, filePath)
+    Exports a data set to a CSV file
+    Example: ExportCSV("StudentScores", "output.csv")
+End
+
+function ImportJSON(filePath, dataSet)
+    Imports data from a JSON file into a data set
+    Example: ImportJSON("data.json", "StudentScores")
+End
+
+function ExportJSON(dataSet, filePath)
+    Exports a data set to a JSON file
+    Example: ExportJSON("StudentScores", "output.json")
+End
+
+# Statistical Functions
+
+function StandardDeviation(dataSet, field)
+    Calculates the standard deviation of a field
+    Example: StandardDeviation("StudentScores", "Score")
+End
+
+function Median(dataSet, field)
+    Returns the median value of a field
+    Example: Median("StudentScores", "Score")
+End
+
+function Mode(dataSet, field)
+    Returns the mode of a field
+    Example: Mode("StudentScores", "Score")
+End
+
+function Percentile(dataSet, field, percentile)
+    Returns the value at a specific percentile
+    Example: Percentile("StudentScores", "Score", 90)
+End
+
+# Utility Functions
+
+function GetFields(dataSet)
+    Returns a list of all fields in the data set
+    Example: GetFields("StudentScores")
+End
+
+function RenameField(dataSet, oldName, newName)
+    Renames a field in the data set
+    Example: RenameField("StudentScores", "Score", "ExamScore")
+End
+
+function AddField(dataSet, fieldName, defaultValue)
+    Adds a new field to the data set with a default value
+    Example: AddField("StudentScores", "Passed", False)
+End
+
+function DeleteField(dataSet, fieldName)
+    Deletes a field from the data set
+    Example: DeleteField("StudentScores", "OldScores")
+End
+
+# Data Visualization Functions
+
+function DisplayTable(dataSet)
+    Displays the data set in a table format
+    Example: DisplayTable("StudentScores")
+End
+
+function GenerateChart(dataSet, xField, yField, chartType)
+    Generates a chart (bar, line, pie) for the data set
+    Example: GenerateChart("StudentScores", "Grade", "Score", "Bar")
+End
+
+function ShowSummary(dataSet)
+    Displays a summary of the data set
+    Example: ShowSummary("StudentScores")
+End

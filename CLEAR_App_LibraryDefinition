@@ -1,0 +1,157 @@
+DocType = LibraryDefinition
+
+// App Initialization
+function CreateApp(name, description = "", version = "1.0", author = "")
+    app name = name
+    app description = description
+    app version = version
+    app author = author
+    return app
+End
+
+function SetBackgroundColor(app, color)
+    app background color = color
+End
+
+function SetAppIcon(app, iconPath)
+    app icon = iconPath
+End
+
+// Screen Management
+function CreateScreen(name)
+    new screen with name = name
+    return screen
+End
+
+function AddScreen(app, screen)
+    attach screen to app
+End
+
+function SwitchToScreen(screen)
+    show screen on the app
+End
+
+// UI Components
+function AddButton(screen, label, action)
+    new button with label = label
+    attach button to screen
+    when button is pressed, do action
+    return button
+End
+
+function AddTextInput(screen, placeholder = "")
+    new text input with placeholder = placeholder
+    attach text input to screen
+    return text input
+End
+
+function GetTextInputValue(inputField)
+    return value of inputField
+End
+
+function AddLabel(screen, text)
+    new label with text = text
+    attach label to screen
+    return label
+End
+
+function UpdateLabel(label, text)
+    set label text = text
+End
+
+function AddImage(screen, imagePath)
+    new image with source = imagePath
+    attach image to screen
+    return image
+End
+
+function AddDropdown(screen, options)
+    new dropdown with options = options
+    attach dropdown to screen
+    return dropdown
+End
+
+function GetDropdownSelection(dropdown)
+    return selected value of dropdown
+End
+
+// Layout Management
+function SetGridLayout(screen, rows, columns)
+    set screen layout to grid with rows = rows and columns = columns
+End
+
+function SetFlexLayout(screen, direction = "row")
+    set screen layout to flexible with direction = direction
+End
+
+function AddToLayout(screen, component, position)
+    place component at position in screen layout
+End
+
+// Navigation
+function AddNavigationBar(app, links)
+    new navigation bar with links = links
+    attach navigation bar to app
+End
+
+function NavigateTo(screen)
+    switch to screen
+End
+
+// Data Management
+function StoreData(key, value)
+    save value with key = key in storage
+End
+
+function RetrieveData(key)
+    return value of key from storage
+End
+
+function DeleteData(key)
+    remove key from storage
+End
+
+// Notifications
+function ShowToast(message, duration = 2)
+    display toast with message for duration seconds
+End
+
+function ShowAlert(title, message)
+    display alert with title and message
+End
+
+function ShowConfirmation(title, message, onConfirm, onCancel)
+    display confirmation with title and message
+    if user confirms, do onConfirm
+    if user cancels, do onCancel
+End
+
+// Animations
+function Animate(component, property, fromValue, toValue, duration)
+    change property of component from fromValue to toValue in duration seconds
+End
+
+function FadeIn(component, duration)
+    make component visible over duration seconds
+End
+
+function FadeOut(component, duration)
+    make component hidden over duration seconds
+End
+
+// App Lifecycle
+function OnStart(action)
+    when app starts, do action
+End
+
+function OnPause(action)
+    when app is paused, do action
+End
+
+function OnResume(action)
+    when app resumes, do action
+End
+
+function OnClose(action)
+    when app is closed, do action
+End

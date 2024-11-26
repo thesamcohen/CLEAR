@@ -1,0 +1,139 @@
+DocType = Webpage
+
+Start
+    PageTitle = "Welcome to My Website"
+
+    // Navigation Bar
+    NavigationBar
+        Buttons
+            "Home" Link = Goto Home
+            "About" Link = Goto About
+            "Contact" Link = Goto Contact
+        EndButtons
+        BackgroundColor = lightblue
+        ButtonTextColor = white
+        ButtonFont = Arial
+        Height = 60px
+        Width = 100%
+    EndNavigationBar
+
+    // Home Page
+    NewPage Home
+        Header
+            Text = "Welcome to My Website!"
+            TextSize = 24
+            TextColor = black
+            BackgroundColor = lightgray
+            Alignment = Center
+            Height = 150px
+            Width = 100%
+        EndHeader
+
+        Body
+            Section
+                Text = "This is a simple website made with CLEAR."
+                TextSize = 16
+                TextColor = darkgray
+                Alignment = Center
+                Height = 200px
+                Width = 80%
+            EndSection
+
+            Section
+                Image = "example.jpg"
+                ImageAlt = "Example Image"
+                ImageSize = 50%
+                Alignment = Center
+                Height = 300px
+                Width = 80%
+            EndSection
+
+            Section
+                Button = "Learn More"
+                Link = Goto About
+                ButtonColor = blue
+                ButtonTextColor = white
+                Height = 50px
+                Width = 150px
+            EndSection
+        EndBody
+
+        Footer
+            Text = "© 2024 My Website. All rights reserved."
+            TextSize = 12
+            TextColor = white
+            BackgroundColor = black
+            Alignment = Center
+            Height = 100px
+            Width = 100%
+        EndFooter
+    EndPage
+
+    // About Page
+    NewPage About
+        Header
+            Text = "About Us"
+            TextSize = 24
+            TextColor = black
+            BackgroundColor = lightgray
+            Alignment = Center
+            Height = 150px
+            Width = 100%
+        EndHeader
+
+        Body
+            Section
+                Text = "We are passionate about making coding accessible and fun."
+                TextSize = 16
+                TextColor = darkgray
+                Alignment = Left
+                Height = 300px
+                Width = 80%
+            EndSection
+        EndBody
+
+        Footer
+            Text = "Contact us at info@example.com"
+            TextSize = 12
+            TextColor = white
+            BackgroundColor = black
+            Alignment = Center
+            Height = 100px
+            Width = 100%
+        EndFooter
+    EndPage
+
+    // Contact Page
+    NewPage Contact
+        Header
+            Text = "Contact Us"
+            TextSize = 24
+            TextColor = black
+            BackgroundColor = lightgray
+            Alignment = Center
+            Height = 150px
+            Width = 100%
+        EndHeader
+
+        Body
+            Section
+                Text = "Email: contact@example.com"
+                TextSize = 16
+                TextColor = darkgray
+                Alignment = Left
+                Height = 300px
+                Width = 80%
+            EndSection
+        EndBody
+
+        Footer
+            Text = "Follow us on social media!"
+            TextSize = 12
+            TextColor = white
+            BackgroundColor = black
+            Alignment = Center
+            Height = 100px
+            Width = 100%
+        EndFooter
+    EndPage
+End

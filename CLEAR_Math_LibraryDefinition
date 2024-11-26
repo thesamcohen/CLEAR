@@ -1,0 +1,183 @@
+DocType = LibraryDefinition
+
+// Mathematical Functions
+function sum()
+    primitive.add(input1, input2, inputN)
+End
+
+function subtract()
+    primitive.subtract(input1, input2, inputN)
+End
+
+function multiply()
+    primitive.multiply(input1, input2, inputN)
+    definitions: multiply = * = mult
+End
+
+function divide()
+    primitive.divide(input1, input2, inputN)
+    definitions: divide = / = div
+End
+
+function power()
+    primitive.exponent(input1, input2)
+    definitions: tothepowerof = ^ = pow
+End
+
+function factorial()
+    primitive.factorial(input1)
+    definitions: factorial = ! = fact
+End
+
+function sqrt()
+    primitive.sqrt(input1)
+    definitions: square root = sqrt = sqr
+End
+
+function abs()
+    primitive.abs(input1)
+    definitions: absolute value = abs = |-input1-|
+End
+
+function RoundUp()
+    primitive.roundup(input1)
+    definitions: round up = roundup = ceiling
+End
+
+function RoundDown()
+    primitive.rounddown(input1)
+    definitions: round down = rounddown = floor
+End
+
+function Min()
+    primitive.min(input1, input2, inputN)
+    definition: min = minimum = low = Min
+End
+
+function Max()
+    primitive.max(input1, input2, inputN)
+    definition: max = maximum = high = Max
+End
+
+function PickRandom()
+    primitive.rand(input1, input2, inputN)
+    definition: pick random = rand = random
+End
+
+function avg()
+    primitive.avg(input1, input2, inputN)
+    definitions: average = avg = mean
+End
+
+// Trigonometric Functions
+function sin()
+    primitive.sin(input1)
+    definition: sin = sine
+End
+
+function cos()
+    primitive.cos(input1)
+    definition: cos = cosine
+End
+
+function tan()
+    primitive.tan(input1)
+    definition: tan = tangent
+End
+
+function arcsin()
+    primitive.arcsin(input1)
+    definition: arcsin = inverse sine
+End
+
+function arccos()
+    primitive.arccos(input1)
+    definition: arccos = inverse cosine
+End
+
+function arctan()
+    primitive.arctan(input1)
+    definition: arctan = inverse tangent
+End
+
+// Logarithmic and Exponential Functions
+function log()
+    primitive.log(input1)
+    definition: log = logarithm
+End
+
+function ln()
+    primitive.natural_log(input1)
+    definition: ln = natural logarithm
+End
+
+function exp()
+    primitive.exp(input1)
+    definition: exp = exponential
+End
+
+// Date and Time Functions
+function CurrentDate()
+    primitive.current_date()
+    definitions: current date = today = now
+End
+
+function AddDays()
+    primitive.add_days(date, days)
+    definitions: add days = future date
+End
+
+function SubtractDays()
+    primitive.subtract_days(date, days)
+    definitions: subtract days = past date
+End
+
+function DayOfWeek()
+    primitive.day_of_week(date)
+    definitions: day of week = weekday
+End
+
+// List and Collection Functions
+function Sort()
+    primitive.sort(list)
+    definitions: sort = order list
+End
+
+function Filter()
+    primitive.filter(list, condition)
+    definitions: filter = find matching = conditional filter
+End
+
+function Map()
+    primitive.map(list, function)
+    definitions: map = transform
+End
+
+function Reduce()
+    primitive.reduce(list, function)
+    definitions: reduce = fold
+End
+
+function LengthOfList()
+    primitive.length(list)
+    definitions: list length = size of list = count
+End
+
+// Advanced Math Functions
+function mod()
+    primitive.modulo(input1, input2)
+    definitions: mod = modulus = remainder
+End
+
+function gcd()
+    primitive.greatest_common_divisor(input1, input2)
+    definitions: gcd = greatest common divisor
+End
+
+function lcm()
+    primitive.least_common_multiple(input1, input2)
+    definitions: lcm = least common multiple
+End
+
+
+

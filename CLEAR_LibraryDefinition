@@ -1,0 +1,89 @@
+DocType = LibraryDefinition
+
+function sum()
+    primitive.add(input1,input2,inputN)
+End 
+
+function subtract() 
+    primitive.subtract(input1, input2, inputN)
+End
+
+function multiply() 
+    primitive.multiply(input1, input2, inputN)
+    definitions: multiply = * = mult
+End
+
+function divide() 
+    primitive.divide(input1, input2, inputN)
+    definitions: divide = / = div
+End
+
+function power()
+    primitive.exponent(input1, input2, inputN)
+    definitions: tothepowerof = ^ = pow 
+End
+
+function factorial()
+    primitive.factorial(input1)
+    definitions: factorial = ! = fact
+End
+
+function sqrt()
+    primitive.sqrt(input1)
+    definitions: square root = sqrt = sqr
+End
+
+function abs()
+    primitive.abs(input1)
+    definitions: absolute value = abs = abs = |-input1-|
+End
+
+function RoundUp()
+    primitive.roundup(input1)
+    definitions: round up = roundup = ceil
+End
+
+function RoundDown()
+    primitive.rounddown(input1)
+    definitions: round down = rounddown = floor
+End
+
+function Min()
+    primitive.min(input1, input2, inputN)
+    definition: min = minimum = low = Min
+End
+
+function Max()
+    primitive.max(input1, input2, inputN)
+    definition: max = maximum = high = Max
+End
+
+function PickRandom()
+    primitive.rand(input1, input2, inputN)
+    definition: pick random = rand = random
+End
+
+function sin()
+    primitive.sin(input1)
+    definition: sin = sine 
+End
+
+function cos()
+    primitive.cos(input1)
+    definition: cos = cosine
+End
+
+function tan()
+    primitive.tan(input1)
+    definition: tan = tangent
+End
+
+function log()
+    primitive.log(input1)
+    definition: log = logarithm
+End
+
+function avg()
+    primitive.avg(input1, input2, inputN)
+    definition: avg = averege = avg
+End

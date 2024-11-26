@@ -1,0 +1,192 @@
+DocType = LibraryDefinition
+
+LibraryName = Testing
+
+# Test Suite Management
+
+function CreateTestSuite(name)
+    Creates an empty test suite with the given name
+    //Example: CreateTestSuite("LoginTests")
+End
+
+function AddTestCase(testSuite, testCaseName, testFunction)
+    Adds a test case to the specified test suite
+    //Example: AddTestCase("LoginTests", "ValidLogin", TestValidLogin)
+End
+
+function RemoveTestCase(testSuite, testCaseName)
+    Removes a test case from the specified test suite
+    //Example: RemoveTestCase("LoginTests", "ValidLogin")
+End
+
+function ListTestCases(testSuite)
+    Lists all test cases in the specified test suite
+    //Example: ListTestCases("LoginTests")
+End
+
+function RunTestSuite(testSuite)
+    Runs all test cases in the specified test suite
+    //Example: RunTestSuite("LoginTests")
+End
+
+function ClearTestSuite(testSuite)
+    Removes all test cases from the specified test suite
+    //Example: ClearTestSuite("LoginTests")
+End
+
+# Assertions
+
+function AssertEqual(actual, expected)
+    Checks if the actual value equals the expected value
+    //Example: AssertEqual(result, 5)
+End
+
+function AssertNotEqual(actual, expected)
+    Checks if the actual value does not equal the expected value
+    //Example: AssertNotEqual(result, 0)
+End
+
+function AssertTrue(condition)
+    Checks if the condition is true
+    //Example: AssertTrue(isLoggedIn)
+End
+
+function AssertFalse(condition)
+    Checks if the condition is false
+    //Example: AssertFalse(isAdmin)
+End
+
+function AssertNull(value)
+    Checks if the value is null
+    //Example: AssertNull(userProfile)
+End
+
+function AssertNotNull(value)
+    Checks if the value is not null
+    //Example: AssertNotNull(sessionToken)
+End
+
+function AssertContains(collection, value)
+    Checks if the collection contains the specified value
+    Example: AssertContains(users, "Alice")
+End
+
+function AssertNotContains(collection, value)
+    Checks if the collection does not contain the specified value
+    //Example: AssertNotContains(blockedUsers, "Bob")
+End
+
+# Mocking
+
+function CreateMock(name)
+    Creates a mock object with the specified name
+    //Example: CreateMock("DatabaseMock")
+End
+
+function AddMockFunction(mock, functionName, returnValue)
+    Adds a function to the mock object with a return value
+    //Example: AddMockFunction("DatabaseMock", "GetUser", {Name: "Alice", Age: 25})
+End
+
+function CallMockFunction(mock, functionName, arguments)
+    Calls a function on the mock object
+    //Example: CallMockFunction("DatabaseMock", "GetUser", {UserId: 123})
+End
+
+function VerifyMockFunctionCall(mock, functionName, expectedCalls)
+    Verifies the number of times a function was called on the mock object
+    //Example: VerifyMockFunctionCall("DatabaseMock", "GetUser", 1)
+End
+
+# Debugging Tools
+
+function LogMessage(message)
+    Logs a message to the console or log file
+    //Example: LogMessage("Test case started")
+End
+
+function LogVariable(name, value)
+    Logs the name and value of a variable
+    //Example: LogVariable("UserCount", userCount)
+End
+
+function DebugBreakpoint()
+    Pauses execution for debugging
+    //Example: DebugBreakpoint()
+End
+
+function MeasureExecutionTime(functionToTest)
+    Measures the time taken by a function to execute
+    //Example: MeasureExecutionTime(TestDatabaseQuery)
+End
+
+function TraceExecution()
+    Tracks and logs the flow of execution in the program
+    //Example: TraceExecution()
+End
+
+# Test Utilities
+
+function BeforeTest(testSuite, setupFunction)
+    Runs the setup function before each test case in the test suite
+    //Example: BeforeTest("LoginTests", InitializeDatabase)
+End
+
+function AfterTest(testSuite, teardownFunction)
+    Runs the teardown function after each test case in the test suite
+    //Example: AfterTest("LoginTests", ClearSession)
+End
+
+function SkipTest(testCaseName)
+    Skips the specified test case during execution
+    //Example: SkipTest("TestLegacyFeature")
+End
+
+function RetryTest(testCaseName, retries)
+    Retries the test case the specified number of times if it fails
+    //Example: RetryTest("TestNetworkConnection", 3)
+End
+
+function RandomizeTestOrder(testSuite)
+    Randomizes the order of test cases in the test suite
+    //Example: RandomizeTestOrder("IntegrationTests")
+End
+
+# Performance Testing
+
+function LoadTest(testFunction, concurrentUsers, duration)
+    Simulates multiple users running the test function for a specific duration
+    //Example: LoadTest(SimulateLogin, 100, "5m")
+End
+
+function StressTest(testFunction, maxLoad, duration)
+    Tests how the function performs under increasing load
+    //Example: StressTest(SimulateAPIRequest, 1000, "10m")
+End
+
+function MemoryUsage(testFunction)
+    Measures the memory usage of the function
+    //Example: MemoryUsage(ProcessLargeData)
+End
+
+# Result Reporting
+
+function GenerateReport(testSuite, format)
+    Generates a test report in the specified format (e.g., text, HTML, JSON)
+    //Example: GenerateReport("LoginTests", "HTML")
+End
+
+function ShowSummary(testSuite)
+    Displays a summary of the test results
+    //Example: ShowSummary("LoginTests")
+End
+
+function LogFailures(testSuite)
+    Logs all failed test cases
+    //Example: LogFailures("PaymentTests")
+End
+
+function EmailReport(emailAddress, testSuite, format)
+    Emails the test report to the specified address
+    //Example: EmailReport("devteam@example.com", "LoginTests", "PDF")
+End

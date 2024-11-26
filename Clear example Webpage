@@ -1,0 +1,141 @@
+DocType = Webpage
+
+Start
+
+navigation_bar
+    Buttons
+        Home Goto Home
+        About Goto About
+        Contact Goto Contact
+        Links Goto Links
+        Search Bar
+            When Enter is pressed
+                find the word in the webpage
+                    if unavalible, show errormessage
+                        errormessage = "Search not found"
+    font of Buttons = arial size 12
+    color of Buttons = hex# ffff
+    navigation_bar color = black
+
+
+Newpage - Home  
+Header is below navigation_bar
+    header color = hex# ffff    
+    header height = 100px
+    on right side of header
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+        background color = hex# ffff
+            text = "Welcome to CLEAR"
+            text = bold
+            text = size 24
+            text = color = hex# 000000
+            text = font = arial
+            text = position = right
+    on left side of header
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+            image = center
+            image = size = 100%
+            image = clear.png
+Body1 is below header
+    body1 color = hex# ffff
+    body1 height = 500px
+    on center of body1 
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+            text = center
+            text = size = 24
+            text = color = hex# 000000
+            text = font = arial
+            text = "This is an example of a website in CLEAR"
+            text = position = center
+Footer is below body1
+    Footer color = hex# ffff
+    Footer height = 100px
+    on center of footer
+        text = center
+        text = size = 12
+        text = color = hex# 000000
+        text = font = arial
+        text = "This is a footer"
+        text = position = center
+
+End
+
+Newpage - About
+Header is below navigation_bar
+    header color = hex# ffff    
+    header height = 100px
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+        background color = hex# ffff
+            text = "You found the About Page!"
+            text = bold
+            text = size 24
+            text = color = hex# 000000
+            text = font = arial
+            text = position = middle
+End
+
+Newpage - Contacts
+Header is below navigation_bar
+    header color = hex# ffff    
+    header height = 100px
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+        background color = hex# ffff
+            text = "Contacts"
+            text = bold
+            text = size 24
+            text = color = hex# 000000
+            text = font = arial
+            text = position = middle
+
+End
+
+Newpage - Links
+Header is below navigation_bar
+    header color = hex# ffff    
+    header height = 100px
+        side border buffer = 10%
+        top and bottom border buffer = 5%
+        background color = hex# ffff
+            text = "Links"
+            text = bold
+            text = size 24
+            text = color = hex# 000000
+            text = font = arial
+            text = position = middle
+
+End
+
+navigation_barSection - Searchbar
+Searchbar is in navigation_bar
+searchbar color = hex# ffff
+searchbar height = 30px
+searchbar width = 300px
+searchbar corners = rounded 25px 
+searchbar border = 1px solid hex# 000000
+searchbar buffer = 5px
+searchbar functionality
+searchbar placeholder = text = "Search"
+    when UserText is inputed
+        find UserText within the website
+            Goto spot of finding
+                if UserText is found and finding is >2
+                    Goto finding = 1 
+            show UserText
+        if usertext is not found
+            Newpage
+            return:
+            text = "Not Found"
+            text = bold
+            text = size 24
+            text = color = hex# 000000
+            text = font = arial
+            text = position = middle
+            
+End
+        
+

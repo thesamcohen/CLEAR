@@ -1,0 +1,156 @@
+DocType = LibraryDefinition
+
+// Creating and Managing Elements
+function Create(tag, id = "", class = "")
+    make a new tag element
+    if id is provided
+        set element id = id
+    if class is provided
+        set element class = class
+    return element
+End
+
+function Add(parent, child)
+    put child inside parent
+End
+
+function Remove(parent, child)
+    take child out of parent
+End
+
+function SetText(element, text)
+    element text = text
+End
+
+function GetText(element)
+    return element text
+End
+
+function SetAttribute(element, name, value)
+    element attribute name = value
+End
+
+function GetAttribute(element, name)
+    return value of element attribute name
+End
+
+function RemoveAttribute(element, name)
+    delete element attribute name
+End
+
+// Styling Elements
+function Style(element, property, value)
+    set element style property = value
+End
+
+function AddClass(element, className)
+    give element the class className
+End
+
+function RemoveClass(element, className)
+    take away class className from element
+End
+
+// Event Handling
+function On(element, event, action)
+    when event happens on element, do action
+End
+
+function Off(element, event, action)
+    stop doing action for event on element
+End
+
+// Searching Elements
+function FindByID(id)
+    return element with id = id
+End
+
+function FindByClass(className)
+    return all elements with class = className
+End
+
+function FindByTag(tagName)
+    return all elements with tag = tagName
+End
+
+// Web Page Manipulation
+function Redirect(url)
+    go to url
+End
+
+function Reload()
+    refresh the page
+End
+
+function OpenNewTab(url)
+    open url in a new tab
+End
+
+function ScrollTo(element)
+    move to element on the page
+End
+
+// Forms
+function GetFormValue(field)
+    return value of field
+End
+
+function SetFormValue(field, value)
+    field value = value
+End
+
+// User-Friendly Features
+function Show(element)
+    make element visible
+End
+
+function Hide(element)
+    make element hidden
+End
+
+function ToggleVisibility(element)
+    if element is visible
+        hide element
+    else
+        show element
+End
+
+function Alert(message)
+    show popup with message
+End
+
+function Confirm(message)
+    ask user to confirm message
+    return true if confirmed, false if not
+End
+
+function Prompt(message, default = "")
+    ask user for input with message
+    return user input or default
+End
+
+// Animations
+function FadeIn(element, duration)
+    slowly show element in duration seconds
+End
+
+function FadeOut(element, duration)
+    slowly hide element in duration seconds
+End
+
+function SlideUp(element, duration)
+    move element up in duration seconds
+End
+
+function SlideDown(element, duration)
+    move element down in duration seconds
+End
+
+'
+Key Features of this Design:
+
+	1.	Simple Language: Commands like Create, Add, Remove, Style, and Show are easy to understand without prior explanation.
+	2.	Clear Parameters: Functions use self-explanatory arguments like tag, id, class, and duration.
+	3.	Built-in Defaults: Optional parameters like default for Prompt allow flexibility with minimal setup.
+	4.	Logical Flow: The syntax mimics natural language, making it accessible for beginners.
+'
